@@ -395,6 +395,16 @@ textarea {
   gap: 48px;
 }
 
+.hero-name-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-avatar-mobile {
+  display: none;
+}
+
 .hero-copy h1 {
   font-size: clamp(3rem, 9vw, 5.75rem);
 }
@@ -882,6 +892,24 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-avatar-mobile {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .hero-avatar-mobile img {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
   .hero-highlights {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1020,6 +1048,16 @@ textarea {
 
   .hero-copy h1 {
     font-size: clamp(2rem, 12vw, 3rem);
+  }
+
+  .hero-name-row {
+    gap: 16px;
+  }
+
+  .hero-avatar-mobile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
   }
 
   .section-heading h2 {
