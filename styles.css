@@ -555,7 +555,7 @@ textarea {
   color: var(--text-soft);
 }
 
-.content-card p + p {
+.content-card p+p {
   margin-top: 18px;
 }
 
@@ -876,6 +876,7 @@ textarea {
    Responsive: Tablet (≤ 1080px)
    =========================== */
 @media (max-width: 1080px) {
+
   .skills-grid,
   .formation-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -933,10 +934,20 @@ textarea {
     padding: 84px 0;
   }
 
+  .header-shell {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .lang-switcher {
+    margin-left: auto;
+  }
+
   .nav-toggle {
     display: inline-block;
     position: relative;
     z-index: 1200;
+    order: -1;
   }
 
   .site-nav {
